@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Base2Base</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+		<script src="script.js"></script>
+		<script type="text/babel" src="script.babel"></script>
+	</head>
+	<body>
+		<div id="base2base">
+			<label for="base2input">Base 2: </label>
+			<input name="base2input" type="text" id="base2" v-model="valBase2" :style="{ content: `${valBase8}%` }"><br>
+			<label for="base8input">Base 8: </label>
+			<input name="base8input" type="text" id="base8" v-model="valBase8"><br>
+			<label for="base10input">Base 10: </label>
+			<input name="base10input" type="text" id="base10" v-model="valBase10"><br>
+			<label for="base16input">Base 16: </label>
+			<input tname="base16input" ype="text" id="base16" v-model="valBase16"><br>
+		</div>
+</body>
+</html>
+
