@@ -1,0 +1,13 @@
+#newPost {
+	color: white;
+}
+
+.blue {
+	transition: background-color 2s;
+	background-color: blue;
+}
+
+.green {
+	transition: background-color 2s;
+	background-color: green;
+}
