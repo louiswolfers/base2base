@@ -15,10 +15,24 @@ var vm = new Vue({
 			}
 		},
 		base8(){
+			if(this.base8number != ""){
+				this.base10number = parseInt(this.base8number, 8);
+				this.base2number = this.base10number.toString(2);
+				this.base16number = this.base10number.toString(16);
+			}
 		},
 		base10(){
+			this.base10number = parseInt(this.base10number);
+			this.base2number = this.base10number.toString(2);
+			this.base8number = this.base10number.toString(8);
+			this.base16number = this.base10number.toString(16);
 		},
 		base16(){
+			if(this.base16number != ""){
+				this.base10number = parseInt(this.base16number, 16);
+				this.base2number = this.base10number.toString(2);
+				this.base8number = this.base10number.toString(8);
+			}
 		}
 	}
 });
