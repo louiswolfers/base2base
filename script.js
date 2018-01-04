@@ -51,6 +51,22 @@ var vm = new Vue({
 				this.base8number = 0;
 				this.base10number = 0;
 			}
+		},
+		verifyString(string, base){
+			if(base == 2){
+				for(let i = 0; i < length(string); i++){
+					if(string[i] != 0 || string[i] != 1){
+						return 0;
+					}
+				}
+			} else if (base == 8) {
+				for(let i = 0; i < length(string); i++){
+					if(string[i] == 8 || string[i] == 9){
+						return 0;
+					}
+				}
+			}
+			return 1;
 		}
 	}
 });

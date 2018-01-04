@@ -1,13 +1,18 @@
-#newPost {
-	color: white;
+input {
+	display: block;
+	width: 20%;
+	height: 10%;
+	padding: 12px 20px;
+	margin: 20px 0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+	box-shadow: 0px 8px 10px 5px #ccc;
 }
 
-.blue {
-	transition: background-color 2s;
-	background-color: blue;
+#app {
+	position: relative;
+	left: 50%;
 }
 
-.green {
-	transition: background-color 2s;
-	background-color: green;
-}
+
