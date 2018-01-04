@@ -9,7 +9,7 @@ var vm = new Vue({
 	methods: {
 		base2(){
 			if(this.base2number != ""){
-				this.base10number = parseInt(this.base2number.toString(), 2);
+				this.base10number = parseInt(this.base2number, 2);
 				this.base8number = this.base10number.toString(8);
 				this.base16number = this.base10number.toString(16);
 			}
