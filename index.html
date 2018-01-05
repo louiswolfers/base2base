@@ -2,12 +2,13 @@
 <html>
 	<head>
 		<title>base2base</title>
-		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
 		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	</head>
 	<body>
 		<div id="app">
-			<h1>base2base</h1>
+			<h1 id="title">base2base</h1>
 			<label for="inputb2">Base 2</label>
 			<input type="text" id="inputb2" name="Base 2" v-model="base2number" v-on:input="base2()">
 			<label for="inputb8">Base 8</label>
