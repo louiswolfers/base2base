@@ -12,6 +12,7 @@ body {
 
 #title {
 	font-family: 'Noto Serif', serif;
+	font-size: 5vw;
 	text-shadow: 4px 2px 0px #000;
 }
 
@@ -28,6 +29,7 @@ body {
 }
 
 #app input {
+	font-size: 2vw;
 	display: block;
 	width: 20%;
 	height: 10%;
