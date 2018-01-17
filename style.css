@@ -3,7 +3,6 @@ html, body , #app {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: 'Montserrat', sans-serif;
 }
 
 body * {
@@ -15,21 +14,15 @@ body * {
 
 .section:nth-of-type(n+1) {
 	border-top: 2px solid #000;
-	height: 20%;
+	height: 22.5%;
 	width: 100%;
-}
-
-header {
-	height: 20%;
-	text-shadow: 4px 2px 0px #000;
+	background-color: #F0F0F1;
 }
 
 #app {
 	font-size: 2em;
 	animation-name: fading;
 	animation-duration: 3s;
-	padding: 0;
-	margin: 0;
 }
 
 .section > label {
@@ -38,6 +31,7 @@ header {
 }
 
 .section > input {
+	font-family: 'Montserrat', bold;
 	background-color: #4CBAFF;
 	height: 50%;
 	font-size: 100%;
@@ -50,15 +44,18 @@ header {
 }
 
 #section-0 {
+	font-family: 'Montserrat', sans-serif;
 	background-color: #FF5349;
 	color: #F0F0F1;
 }
 
-#section-0 ~ .sections {
-	background-color: #18CDCA;
-	color: #F0F0F1;
+/* Changes the color of the text and background when selecting text */
+::selection {
+	background: #292C44;
+	color: white;
 }
 
+/* Fading when website gets loaded */
 @keyframes fading {
 	from {
 		opacity: 0;
