@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>base2base</title>
-		<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+		<title>B2B</title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<link href="style.css" rel="stylesheet">
 		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	</head>
 	<body>
 		<div id="app">
-			<h1 id="title">base2base</h1>
-			<div id="container">
+			<div class="section" id="section-0">
+				<h1 id="title">BASE2BASE</h1>
+			</div>
+			<div class="section" id="section-1">
 				<label for="inputb2">Base 2</label>
 				<input type="text" id="inputb2" name="Base 2" v-model="base2number" v-on:input="base2()">
+			</div>
+			<div class="section" id="section-2">
 				<label for="inputb8">Base 8</label>
 				<input type="text" id="inputb8" name="Base 8" v-model="base8number" v-on:input="base8()">
+			</div>
+			<div class="section" id="section-3">
 				<label for="inputb10">Base 10</label>
 				<input type="text" id="inputb10" name="Base 10" v-model="base10number" v-on:input="base10()">
+			</div>
+			<div class="section" id="section-4">
 				<label for="inputb16">Base 16</label>
 				<input type="text" id="inputb16" name="Base 16" v-model="base16number" v-on:input="base16()">
 			</div>
