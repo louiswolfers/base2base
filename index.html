@@ -9,14 +9,16 @@
 	<body>
 		<div id="app">
 			<h1 id="title">base2base</h1>
-			<label for="inputb2">Base 2</label>
-			<input type="text" id="inputb2" name="Base 2" v-model="base2number" v-on:input="base2()">
-			<label for="inputb8">Base 8</label>
-			<input type="text" id="inputb8" name="Base 8" v-model="base8number" v-on:input="base8()">
-			<label for="inputb10">Base 10</label>
-			<input type="text" id="inputb10" name="Base 10" v-model="base10number" v-on:input="base10()">
-			<label for="inputb16">Base 16</label>
-			<input type="text" id="inputb16" name="Base 16" v-model="base16number" v-on:input="base16()">
+			<div id="container">
+				<label for="inputb2">Base 2</label>
+				<input type="text" id="inputb2" name="Base 2" v-model="base2number" v-on:input="base2()">
+				<label for="inputb8">Base 8</label>
+				<input type="text" id="inputb8" name="Base 8" v-model="base8number" v-on:input="base8()">
+				<label for="inputb10">Base 10</label>
+				<input type="text" id="inputb10" name="Base 10" v-model="base10number" v-on:input="base10()">
+				<label for="inputb16">Base 16</label>
+				<input type="text" id="inputb16" name="Base 16" v-model="base16number" v-on:input="base16()">
+			</div>
 		</div>
 		<script src="script.js"></script>
 	</body>
