@@ -15,7 +15,7 @@
 				<label for="inputb2">Base 2</label>
 				<div id="subsection-0">
 					<input type="text" id="inputb2" name="Base 2" v-model="base2number" v-on:input="numberChecker(2)">
-					<label for="checkbox" class="unsigned"><input type="checkbox" class="unsigned">unsigned</label>
+					<label for="checkbox" class="unsigned"><input type="checkbox" class="unsigned" disabled="disabled" v-on:click="unsigned = !unsigned">unsigned</label>
 				</div>
 			</div>
 			<div class="section" id="section-2">
