@@ -12,11 +12,36 @@ body * {
 	justify-content: center;
 }
 
+[type="checkbox"] {
+	border: none;
+	width: 100%;
+	border: 1px solid #000;
+}
+
+#subsection-0 {
+	width: 100%;
+	height: 50%;
+}
+
+#subsection-0 input {
+	height: 100%;
+}
+
+#subsection-0 label {
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+}
+
 .section:nth-of-type(n+1) {
 	border-top: 2px solid #000;
 	height: 22.5%;
 	width: 100%;
 	background-color: #F0F0F1;
+}
+
+.unsigned {
+	position: absolute;
+	right: 40px;
 }
 
 #app {
@@ -30,7 +55,7 @@ body * {
 	font-family: 'Montserrat', bold;
 }
 
-.section > input {
+[type="text"]:first-of-type {
 	font-family: 'Montserrat', bold;
 	background-color: #4CBAFF;
 	height: 50%;
@@ -47,6 +72,7 @@ body * {
 	font-family: 'Montserrat', sans-serif;
 	background-color: #FF5349;
 	color: #F0F0F1;
+	height: 10%;
 }
 
 /* Changes the color of the text and background when selecting text */
